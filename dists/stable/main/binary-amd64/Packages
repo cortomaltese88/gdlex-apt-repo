@@ -13,3 +13,18 @@ Priority: optional
 Description: Tool interno GD LEX per analisi/correzione conservativa file PCT/PDUA
  GD LEX PCT Validator include GUI e CLI per analisi batch, correzioni conservative e report tecnici (.gdlex).
 
+Package: gdlex-pct-validator
+Version: 1.1.16
+Architecture: amd64
+Maintainer: Studio GD LEX
+Depends: python3, python3-venv, python3-pip
+Filename: pool/main/g/gdlex-pct-validator/gdlex-pct-validator_1.1.16_amd64.deb
+Size: 71652
+MD5sum: 8ab965ec8fee4d2959ca28f6a33f5dd1
+SHA1: d2b42a5df8ac4a02426dd04b865d3c8b07dacef8
+SHA256: 46799f82198628e20dc49716ae7d2c831d2acb66a33adbe059108dae3df247e7
+Section: utils
+Priority: optional
+Description: Tool interno GD LEX per analisi/correzione conservativa file PCT/PDUA
+ GD LEX PCT Validator include GUI e CLI per analisi batch, correzioni conservative e report tecnici (.gdlex).
+
