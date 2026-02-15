@@ -1,24 +1,17 @@
-Origin: GD LEX
-Label: GD LEX APT
-Suite: stable
-Codename: stable
-Architectures: amd64
-Components: main
-Description: GD LEX internal APT repository
-Date: Sat, 14 Feb 2026 11:18:32 +0000
+Date: Sun, 15 Feb 2026 18:22:43 +0000
 MD5Sum:
- 17c33d237f297fbe67a87e3ff66a6162             1494 Release
+ 6d034b046846e6c5c73782ca4d2c31fd               38 Release
  87e9a92f559b6200ba58f582e86b644c             1230 main/binary-amd64/Packages
- d83f6092716f537dd4174bcdcbb842d4              534 main/binary-amd64/Packages.gz
+ fef2fd9cd365c44d4d09e590132b85b0              543 main/binary-amd64/Packages.gz
 SHA1:
- 2c4dc673113d06aa24cea3261dbfe4795eefd733             1494 Release
+ d17ae2d83cb1110100c88717d47d919ee0ffbaf2               38 Release
  e4aff0dfb9d35d2ea0489ac7c89bbb168a960cb3             1230 main/binary-amd64/Packages
- 4056b5f6553170fe6be582e692d72fd20a81850a              534 main/binary-amd64/Packages.gz
+ c9f91aacb723ea454feddb34857927857f98c8dc              543 main/binary-amd64/Packages.gz
 SHA256:
- db883d381680e08fe4467b5a8f29afd0edced84b7c06cd8f6a10086db1fdc3a7             1494 Release
+ c4938cc151697e7ce35678f647d663e971402b49a5a6c417059380b8ee25b2ae               38 Release
  ee66d9c6fcd39c36647940a1b8abf7b53c5278426f47871131cb7dbe6a613891             1230 main/binary-amd64/Packages
- b46336440dc5b5f2dcbb7f72369590859b668b10225b3059ed023ef40758cac7              534 main/binary-amd64/Packages.gz
+ b5c7f537cd8fcbe8b81f9da182b6076dd7e64a4e5f0bd591b16537175e037d63              543 main/binary-amd64/Packages.gz
 SHA512:
- 9f14fb1ba35a0d0932db8891366ba41cc5e69b58664deea98367f83271c977c9c5518313f5399d1c3704dde8bf08c20611447edfe1b46dfcbf1b582d8189e9c9             1494 Release
+ a4081627e345efabb93a76a0acc3d8c29220da4574f4e144e25ec2d2549fe72c20eff0d6ceccaa70e9fe2534e672372372eb25be891ce1f8462afde18f9eda17               38 Release
  4c17b9622ba8353259e390af6073e25d460533c5016a8fd6fcee3b139a451b4a568e39e26046aa1b289741a009ab06585a41e02599a1b12c463d1119061a95a4             1230 main/binary-amd64/Packages
- 4093da14860d377d36b27b152e0aa01f7d528204eddcddd17efc365f290ac4bc05055cd596c045a165f3c9b4d632d0faddefc1c987cbf53e1f993891994dcce9              534 main/binary-amd64/Packages.gz
+ 845ed39e7767e5251042ed501084a28b08a70c1fcbef7e31ed4b38c7c79e9c9fa2d3692ede96ac1aba25800d8c0fae43212093faa199717b8bc8033a7f915dea              543 main/binary-amd64/Packages.gz
