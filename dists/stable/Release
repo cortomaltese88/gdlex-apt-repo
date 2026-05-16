@@ -1,17 +1,24 @@
-Date: Sat, 16 May 2026 13:51:27 +0000
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Sat, 16 May 2026 13:58:11 +0000
+Description: GDLEX APT repository
+Label: GDLEX
+Origin: GDLEX
+Suite: stable
 MD5Sum:
- 2dbd631a01e4936cdda99dc78cd14014               38 Release
+ 5d231f01dfc96de1e9f0ba48ea1f9926              168 Release
  7f2ad8c3fd3812c0184ce17192e82590             3767 main/binary-amd64/Packages
  2fdef12495dae4dfe9bf18f9036d89a6             1292 main/binary-amd64/Packages.gz
 SHA1:
- 16ceddeb39ea65414a7163e0e378e7c5b30efd0e               38 Release
+ be9b76784d447cdea81858c5e0c651fc13a119e0              168 Release
  d5d7d96eec27ecfc2b77fe111fc330c84c4dd5ff             3767 main/binary-amd64/Packages
  82dae20f6a12928278a4d78d8e9a2cccced10ba1             1292 main/binary-amd64/Packages.gz
 SHA256:
- 2a0b1e2c80f15744bc443420de5dcf81c1d291bfb6751d332570fe3eee8ebd0c               38 Release
+ a2ae311852581a1694764738b077fbaf4a2dc6eaab262451fd875c254793ea9a              168 Release
  eb01def075e49a65a7f07b1d55e13f1e4a0152f34d034f1640a372cf2c5de5d1             3767 main/binary-amd64/Packages
  1b49719e2b7cf3f51c8b1a807af12668b1f516b61742771594d3840620643df0             1292 main/binary-amd64/Packages.gz
 SHA512:
- cec1d146e253199033d6a296c38f30b228a5cea33d3a7de3ce8cf846d754caa9dc5525ea20c7e60c6d694220fc37d37d513d1e5e59a39ad8a0b8d38d1ae116da               38 Release
+ cb684e457f2682a9ead84f6f68526ea45fd310588f84e2e57ba3cfdbe9bf7a1871782268f7333983fde50e7602bc4088c2862d7d06e4e1b102a475eae738351e              168 Release
  3277b2850b2142f378f43968cb1b4c17b20867216585a8b238ff0611d3ca8f13ae564d060a0622825f79800cc529955dee717e306059dcf4f0c9845ea2d080a1             3767 main/binary-amd64/Packages
  d10ae637d4eebbe0fb97995d2a497df9d4494d74dac86d86cc6d084de2cbf48b8e6ad6ee90e6ed19f9c582c9dba25da08db7407d18be75cf07be46da513b5981             1292 main/binary-amd64/Packages.gz
