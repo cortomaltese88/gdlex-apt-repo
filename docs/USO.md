@@ -2,12 +2,17 @@
 
 ## Aggiunta della sorgente APT
 
-Il repository e' attualmente pubblicato senza firma GPG / `InRelease`. Per questo motivo l'aggiunta come sorgente APT richiede temporaneamente `trusted=yes`.
+Il repository e' pubblicato con firma GPG e file `InRelease`. La configurazione consigliata usa `signed-by=` con keyring locale.
 
 Esempio:
 
 ```bash
-echo "deb [trusted=yes] https://cortomaltese88.github.io/gdlex-apt-repo stable main" | sudo tee /etc/apt/sources.list.d/gdlex.list
+curl -fsSL https://cortomaltese88.github.io/gdlex-apt-repo/keys/gdlex-archive-keyring.asc \
+  | gpg --dearmor \
+  | sudo tee /usr/share/keyrings/gdlex-archive-keyring.gpg >/dev/null
+
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/gdlex-archive-keyring.gpg] https://cortomaltese88.github.io/gdlex-apt-repo stable main" \
+  | sudo tee /etc/apt/sources.list.d/gdlex.list
 ```
 
 ## Aggiornamento indici
@@ -36,25 +41,29 @@ apt policy gdlex-pct-validator
 sudo apt remove gdlex-pct-validator
 ```
 
-## Nota sul repository non firmato
+## Configurazione consigliata con repository firmato
 
-- `trusted=yes` e' una soluzione provvisoria, non la configurazione finale desiderata
-- finche' il repository resta non firmato, l'utente deve essere consapevole di questa eccezione
-- la roadmap prevede l'introduzione futura della firma GPG
-
-## Configurazione futura con repository firmato
-
-Quando il repository pubblichera' la chiave pubblica e i file di firma APT, la configurazione prevista sara' la seguente:
+Quando il client usa il repository firmato, la configurazione consigliata e' la seguente:
 
 ```bash
 curl -fsSL https://cortomaltese88.github.io/gdlex-apt-repo/keys/gdlex-archive-keyring.asc \
   | gpg --dearmor \
   | sudo tee /usr/share/keyrings/gdlex-archive-keyring.gpg >/dev/null
 
-echo "deb [signed-by=/usr/share/keyrings/gdlex-archive-keyring.gpg] https://cortomaltese88.github.io/gdlex-apt-repo stable main" \
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/gdlex-archive-keyring.gpg] https://cortomaltese88.github.io/gdlex-apt-repo stable main" \
   | sudo tee /etc/apt/sources.list.d/gdlex.list
 
 sudo apt update
 ```
 
-Finche' la firma non sara' attiva sul repository pubblicato, questa procedura resta solo documentazione preparatoria e non sostituisce ancora l'uso temporaneo di `trusted=yes`.
+I file attesi sul repository firmato sono:
+
+- `dists/stable/Release`
+- `dists/stable/InRelease`
+- `dists/stable/Release.gpg`
+
+## Nota su `trusted=yes`
+
+- `trusted=yes` e' una configurazione legacy/deprecata e non piu' consigliata
+- un client gia' configurato in questo modo puo' continuare a funzionare, ma va migrato a `signed-by=`
+- la configurazione raccomandata resta quella con keyring locale e verifica GPG

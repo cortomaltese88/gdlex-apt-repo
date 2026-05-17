@@ -39,9 +39,9 @@ Se il workflow fallisce in pubblicazione, controllare i token e i permessi GitHu
 
 Lo stato `iF` indica installazione incompleta o configurazione fallita lato utente. In questo caso il problema e' generalmente sul sistema client o nel pacchetto applicativo, non nei metadata APT statici.
 
-## Errori futuri legati alla firma GPG
+## Errori legati alla firma GPG
 
-Quando il repository sara' firmato, gli errori piu' comuni lato client potranno includere:
+Con il repository firmato, gli errori piu' comuni lato client possono includere:
 
 - `NO_PUBKEY`: la chiave pubblica del repository non e' installata nel keyring usato da APT.
 - firma non valida: `Release`, `Release.gpg` e `InRelease` potrebbero essere incoerenti o non aggiornati insieme.

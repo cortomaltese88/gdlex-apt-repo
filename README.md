@@ -14,21 +14,7 @@ Il repository potra' ospitare in futuro anche altri strumenti della suite, come 
 
 ## Installazione lato utente
 
-Il repository e' attualmente pubblicato senza firma GPG / `InRelease`. In questa fase l'aggiunta come sorgente APT richiede quindi una configurazione provvisoria con `trusted=yes`.
-
-Esempio:
-
-```bash
-echo "deb [trusted=yes] https://cortomaltese88.github.io/gdlex-apt-repo stable main" | sudo tee /etc/apt/sources.list.d/gdlex.list
-sudo apt update
-sudo apt install gdlex-pct-validator
-```
-
-Nota: `trusted=yes` e' una soluzione temporanea adatta solo finche' il repository resta non firmato.
-
-## Configurazione futura con repository firmato
-
-Quando il repository sara' firmato GPG, la configurazione client prevista sara' basata su keyring locale e `signed-by=`.
+Il repository e' pubblicato con firma GPG e file `InRelease`. La configurazione consigliata lato client usa un keyring locale e `signed-by=`.
 
 Esempio:
 
@@ -37,23 +23,50 @@ curl -fsSL https://cortomaltese88.github.io/gdlex-apt-repo/keys/gdlex-archive-ke
   | gpg --dearmor \
   | sudo tee /usr/share/keyrings/gdlex-archive-keyring.gpg >/dev/null
 
-echo "deb [signed-by=/usr/share/keyrings/gdlex-archive-keyring.gpg] https://cortomaltese88.github.io/gdlex-apt-repo stable main" \
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/gdlex-archive-keyring.gpg] https://cortomaltese88.github.io/gdlex-apt-repo stable main" \
+  | sudo tee /etc/apt/sources.list.d/gdlex.list
+
+sudo apt update
+sudo apt install gdlex-pct-validator
+```
+
+Nota: `trusted=yes` e' ora una configurazione legacy/deprecata. Puo' continuare a funzionare per client gia' configurati, ma non e' piu' la soluzione consigliata e va migrata a `signed-by=`.
+
+## Configurazione consigliata con repository firmato
+
+La configurazione client consigliata e' basata su keyring locale e `signed-by=`.
+
+Esempio:
+
+```bash
+curl -fsSL https://cortomaltese88.github.io/gdlex-apt-repo/keys/gdlex-archive-keyring.asc \
+  | gpg --dearmor \
+  | sudo tee /usr/share/keyrings/gdlex-archive-keyring.gpg >/dev/null
+
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/gdlex-archive-keyring.gpg] https://cortomaltese88.github.io/gdlex-apt-repo stable main" \
   | sudo tee /etc/apt/sources.list.d/gdlex.list
 
 sudo apt update
 ```
 
-Questa sezione e' solo preparatoria: finche' il repository non pubblica `InRelease` e `Release.gpg`, resta valida la configurazione provvisoria con `trusted=yes`.
+I file attesi sul repository firmato sono:
+
+- `dists/stable/Release`
+- `dists/stable/InRelease`
+- `dists/stable/Release.gpg`
+
+Per utenti gia' configurati con `trusted=yes`: la configurazione puo' continuare a funzionare, ma va considerata legacy e migrata appena possibile alla forma con `signed-by=`.
 
 ## Stato firma
 
-- Stato attuale: repository non firmato GPG e senza file `InRelease`
-- Roadmap: introduzione futura di firma GPG per eliminare la necessita' di `trusted=yes`
+- Stato attuale: repository firmato GPG con `InRelease` e `Release.gpg`
+- Configurazione consigliata: uso di keyring locale e `signed-by=`
 
 ## Struttura del repository
 
 - `pool/`: contiene i pacchetti `.deb` pubblicati
 - `dists/stable/main/binary-amd64/`: contiene `Packages` e `Packages.gz`
+- `dists/stable/`: contiene `Release`, `InRelease` e `Release.gpg`
 - `apt-ftparchive.conf`: configurazione usata per generare i metadata APT
 
 ## Manutenzione

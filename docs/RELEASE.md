@@ -21,13 +21,13 @@ I file coinvolti sono:
 
 La configurazione di riferimento e' `apt-ftparchive.conf`. Questo file definisce i parametri essenziali per la generazione coerente dei metadata.
 
-## File attesi quando la firma sara' attiva
+## File attesi con firma attiva
 
-Quando la firma GPG del repository verra' introdotta, oltre ai metadata attuali saranno attesi anche:
+Con la firma GPG attiva, i file attesi del repository sono:
 
 - `dists/stable/Release`
-- `dists/stable/Release.gpg`
 - `dists/stable/InRelease`
+- `dists/stable/Release.gpg`
 
 `Release.gpg` conterra' la firma detached del file `Release`, mentre `InRelease` conterra' la variante clearsigned usata normalmente dai client APT moderni.
 
@@ -50,6 +50,8 @@ Controlli consigliati:
 apt policy gdlex-pct-validator
 grep -n "Version:" dists/stable/main/binary-amd64/Packages
 grep -E "^(Origin|Label|Suite|Codename|Architectures|Components):" dists/stable/Release
+test -s dists/stable/InRelease
+test -s dists/stable/Release.gpg
 ```
 
 Se in futuro verranno aggiunti altri pacchetti della suite, il controllo va ripetuto anche per i nuovi nomi pubblicati.
