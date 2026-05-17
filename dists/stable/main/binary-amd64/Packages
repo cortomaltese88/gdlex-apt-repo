@@ -86,11 +86,12 @@ Section: utils
 Maintainer: Studio GD LEX <info@studiogdlex.it>
 Depends: python3, python3-venv, python3-pip
 Filename: pool/main/g/gdlex-pct-validator/gdlex-pct-validator_1.2.1_amd64.deb
-Size: 1471426
-MD5sum: 998d2c5335215bd1f93a443183667670
-SHA1: d8278ad89dbe8abf145b924d950c8aea547eff92
-SHA256: f7da8501fb44cda966d6994806f2359783175a8130863e4ba90ba83d55520fd2
-SHA512: d75c95b081b5759934a12a5b3c4681c34a58b72e45f6fabdb5c728f7598ba5df8e6e438e01b8f6203979e730e7254f7e8495009135910946344a5973f42e7735
+Size: 1472052
+MD5sum: 26aec4e9630dc76ca73389661ccef7bc
+SHA1: a5b8f1fe3d64c62a08250a53e25b599d8da96c75
+SHA256: 968b52416867de007fb2f73a578fe12b220c8c1fbd8a2edfdd933708573f7158
+SHA512: 12a4a99f4813b3d59362504e874b3ef53913567b0257c59939be6a5568feac4d1e9fcda3ff539d327e18baf158b1a0eba979f6464149f56f0290e35c6113da56
 Description: Tool desktop GD LEX per verifica deposito PCT/PDUA
- GD LEX PCT Validator include GUI e CLI per analisi batch, correzioni conservative e report tecnici (.gdlex).
+ GD LEX PCT Validator include GUI e CLI per analisi batch,
+ correzioni conservative e report tecnici (.gdlex).
 
