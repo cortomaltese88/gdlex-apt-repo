@@ -95,3 +95,24 @@ Description: Tool desktop GD LEX per verifica deposito PCT/PDUA
  GD LEX PCT Validator include GUI e CLI per analisi batch,
  correzioni conservative e report tecnici (.gdlex).
 
+Package: yt-transcriber
+Architecture: amd64
+Version: 1.1.4
+Priority: optional
+Section: utils
+Maintainer: Studio GD LEX <info@studiogdlex.it>
+Installed-Size: 11180
+Depends: python3 (>= 3.10), python3-pyqt6, ffmpeg, nodejs (>= 16), yt-dlp, bc
+Suggests: pandoc, fpdf2
+Filename: pool/main/y/yt-transcriber/yt-transcriber_1.1.4_amd64.deb
+Size: 2272164
+MD5sum: 0b22e42d9ec84527a48ba38a171f1f5e
+SHA1: 7ee5975c5629cca1679b184a4a22039b5ccf6e6f
+SHA256: be04553abda65be0e9a7e6aae70fe2ae4444f18cf2e951b9da152a2b3c4759fb
+SHA512: 1c83d2d6d3c80e7b2d2b81d662f5b82d9928ba63ca8006acfdfaa4a0e92b4ac70073edaf1a97c420026c5ade754a22b06a18ca952a1be994767da7baa56f7d5a
+Description: Pipeline Trascrizione Audio/Video — Studio GD LEX
+ Pipeline completa per la trascrizione di URL video / sorgenti online supportate da yt-dlp e file audio/video locali.
+ Utilizza Whisper.cpp con supporto GPU (Vulkan/CUDA) o faster-whisper come fallback.
+ Genera trascrizioni in formato docx, pdf, txt, srt, vtt con interfaccia grafica
+ in stile Matrix. Sviluppato per Studio GD LEX.
+
