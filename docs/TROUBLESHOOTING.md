@@ -39,6 +39,17 @@ Se il workflow fallisce in pubblicazione, controllare i token e i permessi GitHu
 
 Lo stato `iF` indica installazione incompleta o configurazione fallita lato utente. In questo caso il problema e' generalmente sul sistema client o nel pacchetto applicativo, non nei metadata APT statici.
 
+## Errori futuri legati alla firma GPG
+
+Quando il repository sara' firmato, gli errori piu' comuni lato client potranno includere:
+
+- `NO_PUBKEY`: la chiave pubblica del repository non e' installata nel keyring usato da APT.
+- firma non valida: `Release`, `Release.gpg` e `InRelease` potrebbero essere incoerenti o non aggiornati insieme.
+- keyring non installato: il percorso indicato in `signed-by=` potrebbe non esistere o contenere un file errato.
+- uso legacy di `trusted=yes`: un client configurato in questo modo puo' continuare a funzionare, ma non beneficia del controllo di firma come configurazione finale desiderata.
+
+Prima di attribuire il problema al pacchetto pubblicato, verificare sempre configurazione del keyring, presenza della chiave pubblica corretta e coerenza dei file firma lato repository.
+
 ## Quando NON fare force push
 
 Non fare `force push` per correggere problemi ordinari di metadata, sincronizzazione o ritardi di Pages. Il `force push` va evitato salvo casi eccezionali e consapevoli, perche' rende piu' difficile auditare la storia delle pubblicazioni del repository APT.

@@ -41,3 +41,20 @@ sudo apt remove gdlex-pct-validator
 - `trusted=yes` e' una soluzione provvisoria, non la configurazione finale desiderata
 - finche' il repository resta non firmato, l'utente deve essere consapevole di questa eccezione
 - la roadmap prevede l'introduzione futura della firma GPG
+
+## Configurazione futura con repository firmato
+
+Quando il repository pubblichera' la chiave pubblica e i file di firma APT, la configurazione prevista sara' la seguente:
+
+```bash
+curl -fsSL https://cortomaltese88.github.io/gdlex-apt-repo/keys/gdlex-archive-keyring.asc \
+  | gpg --dearmor \
+  | sudo tee /usr/share/keyrings/gdlex-archive-keyring.gpg >/dev/null
+
+echo "deb [signed-by=/usr/share/keyrings/gdlex-archive-keyring.gpg] https://cortomaltese88.github.io/gdlex-apt-repo stable main" \
+  | sudo tee /etc/apt/sources.list.d/gdlex.list
+
+sudo apt update
+```
+
+Finche' la firma non sara' attiva sul repository pubblicato, questa procedura resta solo documentazione preparatoria e non sostituisce ancora l'uso temporaneo di `trusted=yes`.

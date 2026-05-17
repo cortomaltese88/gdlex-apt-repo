@@ -26,6 +26,25 @@ sudo apt install gdlex-pct-validator
 
 Nota: `trusted=yes` e' una soluzione temporanea adatta solo finche' il repository resta non firmato.
 
+## Configurazione futura con repository firmato
+
+Quando il repository sara' firmato GPG, la configurazione client prevista sara' basata su keyring locale e `signed-by=`.
+
+Esempio:
+
+```bash
+curl -fsSL https://cortomaltese88.github.io/gdlex-apt-repo/keys/gdlex-archive-keyring.asc \
+  | gpg --dearmor \
+  | sudo tee /usr/share/keyrings/gdlex-archive-keyring.gpg >/dev/null
+
+echo "deb [signed-by=/usr/share/keyrings/gdlex-archive-keyring.gpg] https://cortomaltese88.github.io/gdlex-apt-repo stable main" \
+  | sudo tee /etc/apt/sources.list.d/gdlex.list
+
+sudo apt update
+```
+
+Questa sezione e' solo preparatoria: finche' il repository non pubblica `InRelease` e `Release.gpg`, resta valida la configurazione provvisoria con `trusted=yes`.
+
 ## Stato firma
 
 - Stato attuale: repository non firmato GPG e senza file `InRelease`

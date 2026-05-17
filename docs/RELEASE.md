@@ -21,6 +21,16 @@ I file coinvolti sono:
 
 La configurazione di riferimento e' `apt-ftparchive.conf`. Questo file definisce i parametri essenziali per la generazione coerente dei metadata.
 
+## File attesi quando la firma sara' attiva
+
+Quando la firma GPG del repository verra' introdotta, oltre ai metadata attuali saranno attesi anche:
+
+- `dists/stable/Release`
+- `dists/stable/Release.gpg`
+- `dists/stable/InRelease`
+
+`Release.gpg` conterra' la firma detached del file `Release`, mentre `InRelease` conterra' la variante clearsigned usata normalmente dai client APT moderni.
+
 ## Metadata Release attesi
 
 I campi da mantenere coerenti sono:
