@@ -116,3 +116,24 @@ Description: Pipeline Trascrizione Audio/Video — Studio GD LEX
  Genera trascrizioni in formato docx, pdf, txt, srt, vtt con interfaccia grafica
  in stile Matrix. Sviluppato per Studio GD LEX.
 
+Package: yt-transcriber
+Architecture: amd64
+Version: 1.1.5
+Priority: optional
+Section: utils
+Maintainer: Studio GD LEX <info@studiogdlex.it>
+Installed-Size: 11184
+Depends: python3 (>= 3.10), python3-pyqt6, ffmpeg, nodejs (>= 16), yt-dlp, bc
+Suggests: pandoc, fpdf2
+Filename: pool/main/y/yt-transcriber/yt-transcriber_1.1.5_amd64.deb
+Size: 2272502
+MD5sum: b2d6cf1dc6a12b3319022f3d67fe3326
+SHA1: 8627b2693639cd3f37c6c254767771d1efea70ec
+SHA256: 099afa0f596b79a453fa1346aa5f3caf7e3b1835fe0d687d074e4d9cba5c4762
+SHA512: fc29fcc86d5ff91b390db37837c5cd0c8bff61564293e5f05f2c41f54ddf09731128c1e353e324175e7496cbe2559786e2a40f54d3fa2a4908bbecfa3f7869c0
+Description: Pipeline Trascrizione Audio/Video — Studio GD LEX
+ Pipeline completa per la trascrizione di URL video / sorgenti online supportate da yt-dlp e file audio/video locali.
+ Utilizza Whisper.cpp con supporto GPU (Vulkan/CUDA) o faster-whisper come fallback.
+ Genera trascrizioni in formato docx, pdf, txt, srt, vtt con interfaccia grafica
+ in stile Matrix. Sviluppato per Studio GD LEX.
+
