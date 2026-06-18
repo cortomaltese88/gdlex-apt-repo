@@ -184,15 +184,15 @@ Version: 0.3.1
 Priority: optional
 Section: utils
 Maintainer: Studio GD LEX <cortomaltese88@users.noreply.github.com>
-Installed-Size: 668
+Installed-Size: 672
 Depends: python3 (>= 3.12), python3-venv
 Suggests: ocrmypdf, tesseract-ocr, tesseract-ocr-ita
 Filename: pool/main/g/gdlex-ocr/gdlex-ocr_0.3.1_all.deb
-Size: 183004
-MD5sum: c9969db22296cd02fa75ca57024afba3
-SHA1: 38061f7be6885f96728c7f45555cc3b133c06113
-SHA256: bc91418e095655b0e17b76b30a8ed980b174aaba1f2acd895d3b505333ff5b1b
-SHA512: 1175ef5133a172a76dd51d0dbfa41cec927114bc0bd59b63b6b7f79795fc9a975d99594012c3de838b2b81641a82c4fb3c31c9a52852543567d6d6addbf4c234
+Size: 183334
+MD5sum: e335331166bf2bd41157bd7ed1193232
+SHA1: 91120f1587c0a54d46f79c7fc681b79d8075d442
+SHA256: 7a648a39e31476a9f0892594172d9fe8ebcdbb9974d1d97cc2bbb0f1bba12c6a
+SHA512: cca9522ea1e60adfb746f1fd117b2df85673ebef66756696253b20419643b111b6ab424b7f2a8bd1409c562b737c2086e5dc01ef95bbc9fe40f79befb840efe4
 Homepage: https://github.com/cortomaltese88/gdlex-ocr
 Description: OCR locale da PDF a Markdown
  Applicazione desktop PySide6 per convertire localmente documenti PDF in
