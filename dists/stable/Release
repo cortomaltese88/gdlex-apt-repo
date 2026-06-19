@@ -1,24 +1,24 @@
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Thu, 18 Jun 2026 15:22:09 +0000
+Date: Fri, 19 Jun 2026 10:14:05 +0000
 Description: GDLEX APT repository
 Label: GDLEX
 Origin: GDLEX
 Suite: stable
 MD5Sum:
- 6bdb5443c0e4b988fb8030bda37c656f              168 Release
- c594a12cc26f7fb236bb8b723094fa80            21241 main/binary-amd64/Packages
- 449b3762b6829dce41239f1f7eefd54d             5500 main/binary-amd64/Packages.gz
+ 79d03f146aa4f96c76adbe07510c5903              168 Release
+ 9d0a40cf8ebd5eb15a69fb9dfec6aae4            22108 main/binary-amd64/Packages
+ 2e76ff0145e921fe16eb6a1ec20d7ca4             5681 main/binary-amd64/Packages.gz
 SHA1:
- f5e30e15f8aa2f2e5ef9aef7cbccd4d2898a5528              168 Release
- e76f451037cf15d9ff388790997b6f8c631c2ef5            21241 main/binary-amd64/Packages
- 90f5e37774ce94bed31b79a01d65318bebd578da             5500 main/binary-amd64/Packages.gz
+ 5068a64faf3853a48d7857908c98310040d99407              168 Release
+ 5fc693efe8c6274cea6c243f65e6dcb65b9c2e45            22108 main/binary-amd64/Packages
+ d8036bde975de51d71fbe0ada7dbaf4f11e4f2dc             5681 main/binary-amd64/Packages.gz
 SHA256:
- 3d358ff82e0cc94bfee72eed501dd1e3a4ffe77d74e21b673a1a753d2f7293a7              168 Release
- 4075bae2824c06a3a68fe5b192d8b72b623c4af85c0a7b980049ca3cc201149d            21241 main/binary-amd64/Packages
- 33d65dbfbabab14c6ddd703878e9a6e8bb35899ec96273c321e8f7c8ebcf3e9e             5500 main/binary-amd64/Packages.gz
+ 96c9ce0defa96739fcac1a000ffd8b2e292e5c8f9145f8c21850c6d10a1a5ebb              168 Release
+ aea3a4c3b5d4115b8cc20694668efd19c22eef79dc09f280ab1e832a6f68a7e0            22108 main/binary-amd64/Packages
+ e27c79a66649d8f427dbf993b703f2e7b99bf9cf71fe138fb2b067a66c2dbf77             5681 main/binary-amd64/Packages.gz
 SHA512:
- a00c7a98ae5bf7442670978e853e651030604c08847944162b77f4a386dcd6a2da0b6e6d3f3149f76d6d0befa8722536a8db77de2e34b88bbe80ef9800df06f9              168 Release
- 5c7ffb87069a6776fe69fadc061c38feead9d0b6c7b273f7c0b4ffe339cfe2812d1e852b83d352412592189622e16d169b960e4c3571ad0ae6e87acb07d3d149            21241 main/binary-amd64/Packages
- fe33d007ebf7b33691a8910c55f3fd0ee223207c9a6aa5e0d2c6e3b4ea65384d7677afce3b5bbf37eea0a6aca54b14d4024bf9aac58d0d19184c5dabfb4825e8             5500 main/binary-amd64/Packages.gz
+ 8639e0f052383f22ca1fcd47554ad5a413a50d16e1ceca224adc147e4453730facfab4635fcdb585b9c2b4ceb781936c637f172deeb4391cbcbbfc537113e213              168 Release
+ 800ae59cbacb0aecd7326024d90c3c7c5d133bddc2baa0b8ed59158b073d59e38fdfeb8b695d7e124666d81ea9f270b1da069ecc760f2071b5ea8bd97afa6c7e            22108 main/binary-amd64/Packages
+ 7d1a3f9deac17efd6972a8ac97f4c27b245cd7a612f6e1dc2deec6eb18b38c0a9487a8cf0ea0df584255a6b3c3cfed2585be310da086bc07d52dc08455620c73             5681 main/binary-amd64/Packages.gz
