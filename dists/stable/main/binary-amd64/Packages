@@ -258,6 +258,26 @@ Description: OCR locale da PDF a Markdown
  Applicazione desktop PySide6 per convertire localmente documenti PDF in
  Markdown tramite Docling, con PDF ricercabile OCR opzionale.
 
+Package: gdlex-ocr
+Architecture: all
+Version: 0.5.0
+Priority: optional
+Section: utils
+Maintainer: Studio GD LEX <cortomaltese88@users.noreply.github.com>
+Installed-Size: 800
+Depends: python3 (>= 3.12), python3-venv
+Suggests: ocrmypdf, tesseract-ocr, tesseract-ocr-ita, ghostscript
+Filename: pool/main/g/gdlex-ocr/gdlex-ocr_0.5.0_all.deb
+Size: 206988
+MD5sum: f49a89272c36e2835d738e2980b48aa7
+SHA1: 30238cb417443256d94c6cd3685b70860e9a771e
+SHA256: 5655faca50c85018af62551b2e809604eecda10016c0ded11d9f866e966e00b4
+SHA512: d02eece14c3f4a77f971116303342f06d2bac4cf422ea6587b458c89b36190e8097d1da0fdf1f2b1d7d8fdbdb42952cf2d3db3db26fe75c5b62ee8df3f2ef553
+Homepage: https://github.com/cortomaltese88/gdlex-ocr
+Description: OCR locale da PDF a Markdown
+ Applicazione desktop PySide6 per convertire localmente documenti PDF in
+ Markdown tramite Docling, con PDF ricercabile OCR opzionale.
+
 Package: gdlex-pct-validator
 Architecture: amd64
 Version: 1.1.11
